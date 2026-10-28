@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff1f3">
+<meta name="description" content="Un cumpleaños, muchos recuerdos y un deseo por pedir. Toca el pastel para apagar la vela.">
+<title>Pide un deseo · Feliz cumpleaños</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="motion.css">
+<script defer src="assets/photos.js"></script>
+<script defer src="app.js"></script>
+<script defer src="motion.js"></script>
+<script defer src="photo-effects.js"></script>
+</head>
+<body>
+<main>
+<section class="celebration" aria-labelledby="birthday-title">
+  <div class="little-star star-one" aria-hidden="true">✧</div>
+  <div class="little-star star-two" aria-hidden="true">✧</div>
+  <h1 id="birthday-title">Feliz cumpleaños</h1>
+  <div class="birthday-scene">
+    <div class="photo-fan fan-left" id="fan-left"></div>
+    <div class="cake-area">
+      <p class="wish-title" id="wish-title">Pide un deseo…</p>
+      <button class="cake-button" id="cake" type="button" aria-label="Apagar la vela del pastel">
+      <svg class="cake-art" viewBox="0 0 400 390" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="sponge" x1="80" y1="180" x2="320" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#f6b8c5"/><stop offset=".6" stop-color="#e78ca7"/><stop offset="1" stop-color="#cd6c8e"/></linearGradient>
+          <linearGradient id="icing" x1="100" y1="148" x2="300" y2="215" gradientUnits="userSpaceOnUse"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#f9e2d0"/></linearGradient>
+          <linearGradient id="candle" x1="188" y1="90" x2="212" y2="90" gradientUnits="userSpaceOnUse"><stop stop-color="#9ab6a2"/><stop offset=".5" stop-color="#c2d9bd"/><stop offset="1" stop-color="#7d9f8f"/></linearGradient>
+          <radialGradient id="fire"><stop stop-color="#fff6bb"/><stop offset=".5" stop-color="#ffc773"/><stop offset="1" stop-color="#ed9360"/></radialGradient>
+          <radialGradient id="halo"><stop stop-color="#ffd799" stop-opacity=".5"/><stop offset="1" stop-color="#ffd799" stop-opacity="0"/></radialGradient>
+          <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+        </defs>
+        <ellipse cx="200" cy="341" rx="145" ry="17" fill="#a54c68" opacity=".1" filter="url(#soft)"/>
+        <ellipse cx="200" cy="324" rx="153" ry="32" fill="#d7dace"/>
+        <ellipse cx="200" cy="317" rx="153" ry="31" fill="#f5f5e9"/>
+        <ellipse cx="200" cy="316" rx="133" ry="23" stroke="#d5d8c7" stroke-width="2"/>
+        <path d="M78 194H322V284C322 309 267 327 200 327C133 327 78 309 78 284V194Z" fill="url(#sponge)"/>
+        <path d="M80 258C133 282 269 285 320 258" stroke="#fce6d4" stroke-width="9"/>
+        <path d="M80 275C135 300 270 302 320 275" stroke="#f5abc0" stroke-width="2" opacity=".8"/>
+        <path d="M78 188C78 164 133 146 200 146C267 146 322 164 322 188V211C322 225 303 226 300 212V204C300 198 289 198 289 205V230C289 246 270 248 269 230V212C269 207 257 207 257 213V219C257 233 239 234 239 220V217C239 210 227 210 227 218V241C227 257 207 257 207 241V221C207 214 195 214 195 221V229C195 246 176 246 176 230V215C176 208 164 208 164 215V219C164 233 145 234 145 219V211C145 204 133 204 133 211V231C133 245 114 244 114 229V205C114 198 102 198 102 205C102 219 78 219 78 204V188Z" fill="url(#icing)"/>
+        <ellipse cx="200" cy="183" rx="122" ry="37" fill="#fff8e9"/>
+        <ellipse cx="200" cy="182" rx="103" ry="27" stroke="#f2dbcb" stroke-width="2" stroke-dasharray="1 10" stroke-linecap="round"/>
+        <g stroke-width="4" stroke-linecap="round">
+          <path d="M115 183L120 179M270 190L276 193M159 165L163 168M229 168L234 164M158 195L161 199M244 201L249 198" stroke="#cf6c8c"/>
+          <path d="M139 179L141 184M262 175L267 176M183 205L188 205M215 193L219 196" stroke="#92b2a0"/>
+        </g>
+        <g fill="#fff5e3" stroke="#f5dfcf" stroke-width="1.5">
+          <path d="M91 184C87 173 97 167 102 162C102 172 115 174 111 184C108 192 94 192 91 184Z"/>
+          <path d="M285 184C281 173 291 167 296 162C296 172 309 174 305 184C302 192 288 192 285 184Z"/>
+          <path d="M126 162C123 152 131 146 136 141C136 151 149 152 145 162C141 169 129 169 126 162Z"/>
+          <path d="M250 161C246 151 255 145 260 140C260 150 273 152 269 161C266 169 253 169 250 161Z"/>
+          <path d="M145 208C141 198 150 192 155 187C155 197 168 199 164 208C161 216 148 216 145 208Z"/>
+          <path d="M232 209C228 199 237 193 242 188C242 198 255 200 251 209C248 217 235 217 232 209Z"/>
+        </g>
+        <path d="M190 89H210V176C210 183 190 183 190 176V89Z" fill="url(#candle)"/>
+        <path d="M191 107L209 98M191 129L209 120M191 151L209 142M191 173L209 164" stroke="#f6f7df" stroke-width="5"/>
+        <ellipse cx="200" cy="89" rx="10" ry="4" fill="#e4e8cd"/>
+        <path d="M200 88V75" stroke="#6b4b45" stroke-width="3" stroke-linecap="round"/>
+        <g class="flame-group">
+          <circle class="flame-glow" cx="200" cy="61" r="45" fill="url(#halo)"/>
+          <path class="flame" d="M200 77C178 75 185 53 202 33C200 48 222 63 209 74C207 76 204 77 200 77Z" fill="url(#fire)"/>
+          <path d="M200 74C193 72 196 61 201 55C200 64 208 68 203 73Z" fill="#fff7d4"/>
+        </g>
+        <g class="smoke" stroke="#9e9090" stroke-width="2.5" stroke-linecap="round" opacity="0">
+          <path d="M200 77C180 60 218 57 201 37C187 22 199 15 207 9"/>
+          <path d="M205 73C218 59 192 55 208 39"/>
+        </g>
+      </svg>
+      </button>
+      <p class="instruction" id="instruction"><span class="desktop-instruction">Haz clic en la vela para apagarla</span><span class="touch-instruction">Toca la vela para apagarla</span></p>
+      <p class="success-message" id="success-message" role="status" aria-live="polite"></p>
+      <button class="relight" id="relight" type="button" hidden>Volver a encender</button>
+    </div>
+    <div class="photo-fan fan-right" id="fan-right"></div>
+  </div>
+  <a class="album-link" href="#album">Nuestros recuerdos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+</section>
+<section class="album" id="album" aria-labelledby="album-title">
+  <div class="album-heading"><span class="tiny-flower" aria-hidden="true">✳</span><h2 id="album-title">Todos estos momentos</h2><p>Y los que faltan por vivir.</p></div>
+  <div class="gallery" id="gallery"></div>
+  <noscript><p>Activa JavaScript para ver las fotos y apagar la vela.</p></noscript>
+</section>
+<footer>Que nunca falten motivos para sonreír.<span aria-hidden="true">♡</span></footer>
+</main>
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+<dialog id="lightbox" aria-label="Visor de fotos">
+  <div class="viewer-toolbar"><span id="photo-counter" aria-live="polite"></span><button id="close-viewer" aria-label="Cerrar foto" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+  <div class="viewer-content"><button class="viewer-arrow prev" id="prev-photo" aria-label="Foto anterior" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><img id="viewer-image" alt=""><button class="viewer-arrow next" id="next-photo" aria-label="Foto siguiente" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div>
+</dialog>
+</body>
+</html>
